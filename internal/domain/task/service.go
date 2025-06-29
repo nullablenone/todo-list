@@ -62,8 +62,13 @@ func (s *service) UpdateTask(id string, input UpdateTaskRequest) (*Task, error) 
 		return nil, fmt.Errorf("failed to get tasks: %w", err)
 	}
 
-	task.Title = input.Title
-	task.Description = input.Description
+	if input.Title != "" {
+		task.Title = input.Title
+	}
+
+	if input.Description != nil {
+		task.Description = input.Description
+	}
 
 	err = s.Repo.Save(task)
 	if err != nil {
