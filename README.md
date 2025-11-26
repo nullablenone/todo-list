@@ -4,7 +4,7 @@ Sebuah RESTful API sederhana namun kokoh untuk mengelola daftar tugas (To-Do Lis
 
 Proyek ini adalah portofolio untuk menunjukkan pemahaman dalam membangun layanan backend yang terstruktur, siap untuk lingkungan produksi, dan mengikuti praktik terbaik dalam industri.
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 -   **Arsitektur Bersih**: Memisahkan logika bisnis dari detail teknis (framework, database), membuat aplikasi lebih mudah diuji, dirawat, dan diskalakan.
 -   **RESTful API**: Menyediakan endpoint yang jelas dan standar industri untuk operasi CRUD (Create, Read, Update, Delete) tugas.
@@ -12,7 +12,7 @@ Proyek ini adalah portofolio untuk menunjukkan pemahaman dalam membangun layanan
 -   **Interaksi Database dengan ORM**: Menggunakan GORM untuk abstraksi dan interaksi dengan database PostgreSQL.
 -   **Manajemen Konfigurasi**: Mengelola kredensial dan konfigurasi lingkungan secara aman melalui file `.env`.
 
-## 🏛️ Arsitektur
+## Arsitektur
 
 Aplikasi ini mengadopsi prinsip **Clean Architecture** untuk memastikan pemisahan tanggung jawab (*separation of concerns*) yang jelas. Ketergantungan kode hanya mengarah ke dalam, dari lapisan luar yang konkret ke lapisan dalam yang abstrak.
 
@@ -22,7 +22,7 @@ Aplikasi ini mengadopsi prinsip **Clean Architecture** untuk memastikan pemisaha
 -   **Handler**: Bertindak sebagai *controller* yang menerima permintaan HTTP dari Gin, memanggil metode yang sesuai di lapisan *service*, dan mengembalikan respons dalam format JSON.
 -   **Main & Routes**: Titik masuk aplikasi yang menginisialisasi semua komponen (DI), melakukan migrasi database, dan mendefinisikan rute-rute API.
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 -   **Bahasa**: Go (Golang)
 -   **Web Framework**: Gin
@@ -30,7 +30,7 @@ Aplikasi ini mengadopsi prinsip **Clean Architecture** untuk memastikan pemisaha
 -   **Database**: PostgreSQL
 -   **Manajemen Konfigurasi**: godotenv
 
-## 🚀 Memulai Proyek
+## Memulai Proyek
 
 Untuk menjalankan proyek ini di lingkungan lokal, ikuti langkah-langkah berikut.
 
